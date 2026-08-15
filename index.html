@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>生命教育概論・期末檢討｜台北班</title>
+<style>
+:root{
+  --wine:#862633; --wine-deep:#5C1A23; --gold:#A8782E; --gold-soft:#C9A85C;
+  --paper:#FAF3EA; --paper-soft:#F5EADB; --ink:#2B2320; --ink-soft:#5A4F48;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:var(--wine-deep)}
+html,body{width:100%;height:100%;overflow:hidden;background:var(--wine-deep)}
+::backdrop{background:var(--wine-deep)}
+body{font-family:"Noto Serif TC","Songti TC",serif;color:var(--ink)}
+.slide{position:absolute;inset:0;display:none;padding:6vh 6vw;background:var(--paper)}
+.slide.active{display:flex;flex-direction:column}
+/* 封面 */
+.cover{background:radial-gradient(120% 120% at 20% 15%,#7A2230 0%,var(--wine-deep) 58%,#3F1118 100%);color:var(--paper);justify-content:center;align-items:center;text-align:center}
+.cover .kicker{font-size:1.35rem;letter-spacing:.55em;color:var(--gold-soft);margin-bottom:2.2vh}
+.cover h1{font-size:4.6rem;font-weight:900;letter-spacing:.12em;margin-bottom:2.4vh}
+.cover .sub{font-size:1.6rem;color:#EAD9C2;letter-spacing:.12em;margin-bottom:4.5vh}
+.cover-cta{font-family:inherit;font-size:1.35rem;letter-spacing:.2em;padding:.85em 2.4em;border:none;border-radius:999px;background:linear-gradient(135deg,var(--gold),#8A5F1E);color:#FFF8EE;cursor:pointer;font-weight:700}
+.cover .meta{margin-top:5vh;font-size:1.2rem;color:#D8C2AC;letter-spacing:.18em}
+/* 內頁 */
+h2.pt{font-size:2.6rem;font-weight:900;color:var(--wine);letter-spacing:.06em;border-bottom:3px solid var(--gold);padding-bottom:1.6vh;margin-bottom:3.6vh}
+.agenda{display:flex;flex-direction:column;gap:2.6vh;justify-content:center;flex:1}
+.ag-row{display:flex;align-items:center;gap:2.4vw;background:var(--paper-soft);border-left:.55vw solid var(--wine);border-radius:14px;padding:2.6vh 2.4vw}
+.ag-row .no{font-size:2.2rem;font-weight:900;color:var(--gold);min-width:3.2em}
+.ag-row .tt{font-size:1.75rem;font-weight:700}
+.ag-row .dd{font-size:1.5rem;color:var(--ink-soft);margin-top:.4vh}
+/* 控制 */
+.nav-btn{position:fixed;bottom:3.2vh;width:3.1rem;height:3.1rem;border-radius:50%;border:1px solid rgba(134,38,51,.4);background:rgba(255,255,255,.72);color:var(--wine);font-size:1.3rem;cursor:pointer;z-index:60}
+#prevB{left:2.4vw}#nextB{left:calc(2.4vw + 3.8rem)}
+#fsB{position:fixed;right:6.2vw;bottom:3.2vh;width:3.1rem;height:3.1rem;border-radius:12px;border:1px solid rgba(134,38,51,.4);background:rgba(255,255,255,.72);color:var(--wine);font-size:1.25rem;cursor:pointer;z-index:60}
+#pageNo{position:fixed;right:2vw;bottom:3.4vh;background:rgba(255,255,255,.85);border-radius:999px;padding:.35em 1em;font-size:.95rem;color:var(--ink-soft);z-index:60}
+.cover ~ #pageNo{color:#333}
+</style>
+</head>
+<body>
+
+<!-- S1 封面 -->
+<section class="slide cover active">
+  <div class="kicker">生命教育概論・台北班</div>
+  <h1>期末檢討</h1>
+  <div class="sub">回望這一場生命的學問——考卷、數據與你們的收穫</div>
+  <button class="cover-cta" onclick="toggleFullscreen()">進入全螢幕・開始</button>
+  <div class="meta">孫效智｜臺大生命教育研發育成中心　第十期師資培育學分班｜115/8/22</div>
+</section>
+
+<!-- S2 議程 -->
+<section class="slide">
+  <h2 class="pt">今天做三件事</h2>
+  <div class="agenda">
+    <div class="ag-row"><div class="no">壹</div><div><div class="tt">期末考檢討</div><div class="dd">整體落點與成績調整方式・八題逐題：答題落點、給分要點、常見誤區</div></div></div>
+    <div class="ag-row"><div class="no">貳</div><div><div class="tt">整學期學習統計</div><div class="dd">從課前作業到期末考——用數據回望你們這一學期走了多遠</div></div></div>
+    <div class="ag-row"><div class="no">參</div><div><div class="tt">一分鐘快閃與收束</div><div class="dd">自願上麥：這學期我帶走的一件事</div></div></div>
+  </div>
+</section>
+
+<button class="nav-btn" id="prevB" onclick="go(-1)">‹</button>
+<button class="nav-btn" id="nextB" onclick="go(1)">›</button>
+<button id="fsB" onclick="toggleFullscreen()">⛶</button>
+<div id="pageNo">1 / 2</div>
+
+<script>
+const slides=[...document.querySelectorAll('.slide')];
+let cur=0;
+function show(i){
+  cur=Math.max(0,Math.min(slides.length-1,i));
+  slides.forEach((s,k)=>s.classList.toggle('active',k===cur));
+  document.getElementById('pageNo').textContent=(cur+1)+' / '+slides.length;
+  if(location.hash!=='#'+(cur+1)) history.replaceState(null,'','#'+(cur+1));
+}
+function go(d){show(cur+d)}
+function toggleFullscreen(){
+  if(!document.fullscreenElement){document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen();}
+  else{document.exitFullscreen&&document.exitFullscreen();}
+}
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();go(1);}
+  if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(-1);}
+  if(e.key==='f'||e.key==='F'){toggleFullscreen();}
+});
+(function(){const h=parseInt(location.hash.slice(1),10);show(isNaN(h)?0:h-1);})();
+</script>
+</body>
+</html>
