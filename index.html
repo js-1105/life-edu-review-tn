@@ -36,6 +36,27 @@ h2.pt{font-size:2.6rem;font-weight:900;color:var(--wine);letter-spacing:.06em;bo
 #fsB{position:fixed;right:6.2vw;bottom:3.2vh;width:3.1rem;height:3.1rem;border-radius:12px;border:1px solid rgba(134,38,51,.4);background:rgba(255,255,255,.72);color:var(--wine);font-size:1.25rem;cursor:pointer;z-index:60}
 #pageNo{position:fixed;right:2vw;bottom:3.4vh;background:rgba(255,255,255,.85);border-radius:999px;padding:.35em 1em;font-size:.95rem;color:var(--ink-soft);z-index:60}
 .cover ~ #pageNo{color:#333}
+
+.divider{background:radial-gradient(120% 120% at 80% 85%,#7A2230 0%,var(--wine-deep) 55%,#3A1017 100%);color:var(--paper);justify-content:center;align-items:flex-start}
+.divider .dnum{font-size:7rem;font-weight:900;color:var(--gold-soft);letter-spacing:.1em;margin-bottom:1vh}
+.divider .dtt{font-size:3.2rem;font-weight:900;letter-spacing:.08em;margin-bottom:2vh}
+.divider .dsub{font-size:1.5rem;color:#EAD9C2;max-width:70%;line-height:1.7}
+.chart-wrap{flex:1;display:flex;align-items:center;justify-content:center;min-height:0}
+h3.sec-note{font-size:1.3rem;color:var(--ink-soft);font-weight:400;margin:-2.4vh 0 2.2vh}
+.q-topline{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:1vh 2vw;margin-bottom:1.6vh}
+.q-quote{background:#EFE6D8;border-radius:10px;padding:.7em 1.3em;font-size:1.05rem;line-height:1.5;margin-bottom:1.2vh}
+.rate-pill{display:inline-block;padding:.28em 1.1em;border-radius:999px;font-size:1.15rem;font-weight:900}
+.rate-red{background:#F4D3D3;color:#7A2230}
+.rate-green{background:#DCEBD1;color:#2F5D34}
+.rate-neutral{background:#F0E4C8;color:#7A5A1E}
+.qt-table{width:100%;border-collapse:collapse;font-size:.98rem;margin-bottom:1vh}
+.qt-table td{border-bottom:1px solid #E3D6C4;padding:.4em .65em;text-align:left;vertical-align:top}
+.qt-table td.pt{text-align:center;width:3.2em;font-weight:900;color:var(--wine);white-space:nowrap}
+.qt-table td.sub{font-weight:700;color:var(--wine);white-space:nowrap;width:5.4em}
+.pitfall{background:var(--paper-soft);border-left:.4vw solid var(--gold);border-radius:10px;padding:.75em 1.4em;font-size:1rem;line-height:1.5}
+.pitfall .lbl{color:var(--wine);font-weight:900;margin-bottom:.35em;font-size:1.1rem}
+.two-col{display:grid;grid-template-columns:1.05fr .95fr;gap:0 3.6vw;flex:1;min-height:0}
+.scroll-note{font-size:1.02rem;color:var(--ink-soft);margin-top:1vh}
 </style>
 </head>
 <body>
@@ -57,6 +78,181 @@ h2.pt{font-size:2.6rem;font-weight:900;color:var(--wine);letter-spacing:.06em;bo
     <div class="ag-row"><div class="no">貳</div><div><div class="tt">整學期學習統計</div><div class="dd">從課前作業到期末考——用數據回望你們這一學期走了多遠</div></div></div>
     <div class="ag-row"><div class="no">參</div><div><div class="tt">一分鐘快閃與收束</div><div class="dd">自願上麥：這學期我帶走的一件事</div></div></div>
   </div>
+</section>
+
+
+<section class="slide divider">
+  <div class="dnum">壹</div>
+  <div class="dtt">期末考檢討</div>
+  <div class="dsub">整體落點、成績調整方式，以及八題逐題的答題回顧與常見誤區</div>
+</section>
+<section class="slide">
+  <h2 class="pt">整體落點</h2>
+  <h3 class="sec-note">全班 46 人・平均 63.4 分（滿分 100）</h3>
+  <div class="chart-wrap"><svg viewBox="0 0 800 340" style="width:100%;height:100%"><line x1="50" y1="280" x2="710" y2="280" stroke="#C9B99B" stroke-width="2"/><rect x="60" y="61" width="130" height="219" rx="8" fill="#862633"/><text x="125.0" y="47" text-anchor="middle" font-size="30" font-weight="900" fill="#2B2320">14</text><text x="125.0" y="314" text-anchor="middle" font-size="19" fill="#5A4F48">70 分以上</text><rect x="230" y="30" width="130" height="250" rx="8" fill="#A8782E"/><text x="295.0" y="16" text-anchor="middle" font-size="30" font-weight="900" fill="#2B2320">16</text><text x="295.0" y="314" text-anchor="middle" font-size="19" fill="#5A4F48">60–69 分</text><rect x="400" y="124" width="130" height="156" rx="8" fill="#B08968"/><text x="465.0" y="110" text-anchor="middle" font-size="30" font-weight="900" fill="#2B2320">10</text><text x="465.0" y="314" text-anchor="middle" font-size="19" fill="#5A4F48">50–59 分</text><rect x="570" y="186" width="130" height="94" rx="8" fill="#5C1A23"/><text x="635.0" y="172" text-anchor="middle" font-size="30" font-weight="900" fill="#2B2320">6</text><text x="635.0" y="314" text-anchor="middle" font-size="19" fill="#5A4F48">49 分以下</text></svg></div>
+  
+</section>
+<section class="slide">
+  <h2 class="pt">成績調整方式</h2>
+  <h3 class="sec-note">我們討論過幾種方案，最後採用「以最高分為基準、全班等比提高」</h3>
+  <div class="chart-wrap"><svg viewBox="0 0 900 380" style="width:100%;height:100%"><line x1="45" y1="310" x2="783" y2="310" stroke="#C9B99B" stroke-width="2"/><rect x="55" y="139" width="110" height="171" rx="8" fill="#B08968"/><text x="110.0" y="123" text-anchor="middle" font-size="27" font-weight="900" fill="#2B2320">63.4</text><text x="110.0" y="342" text-anchor="middle" font-size="18" font-weight="400" fill="#5A4F48">原始成績</text><text x="110.0" y="366" text-anchor="middle" font-size="15" fill="#8A7A68">未達60分 16 人</text><rect x="207" y="99" width="110" height="211" rx="8" fill="#A8782E"/><text x="262.0" y="83" text-anchor="middle" font-size="27" font-weight="900" fill="#2B2320">78.2</text><text x="262.0" y="342" text-anchor="middle" font-size="18" font-weight="400" fill="#5A4F48">方案甲</text><text x="262.0" y="366" text-anchor="middle" font-size="15" fill="#8A7A68">未達60分 5 人</text><rect x="359" y="96" width="110" height="214" rx="8" fill="#A8782E"/><text x="414.0" y="80" text-anchor="middle" font-size="27" font-weight="900" fill="#2B2320">79.2</text><text x="414.0" y="342" text-anchor="middle" font-size="18" font-weight="400" fill="#5A4F48">方案乙</text><text x="414.0" y="366" text-anchor="middle" font-size="15" fill="#8A7A68">未達60分 0 人</text><rect x="511" y="106" width="110" height="204" rx="8" fill="#A8782E"/><text x="566.0" y="90" text-anchor="middle" font-size="27" font-weight="900" fill="#2B2320">75.4</text><text x="566.0" y="342" text-anchor="middle" font-size="18" font-weight="400" fill="#5A4F48">方案丙</text><text x="566.0" y="366" text-anchor="middle" font-size="15" fill="#8A7A68">未達60分 4 人</text><rect x="663" y="109" width="110" height="201" rx="8" fill="#862633"/><text x="718.0" y="93" text-anchor="middle" font-size="27" font-weight="900" fill="#2B2320">74.3</text><text x="718.0" y="342" text-anchor="middle" font-size="18" font-weight="900" fill="#862633">採行方案　★</text><text x="718.0" y="366" text-anchor="middle" font-size="15" fill="#8A7A68">未達60分 6 人</text></svg></div>
+  <p class="scroll-note" style="text-align:center">採行方案：本次最高分視為 95 分，其餘同學依同一比例換算提高——原始分數的相對高低完全不變，只是把整份考卷的難度重新校準。</p>
+</section>
+<section class="slide">
+  <h2 class="pt">十七道題的得分率總覽</h2>
+  <h3 class="sec-note">顏色越紅代表全班掌握得越弱，越綠代表掌握得越好</h3>
+  <div class="chart-wrap"><svg viewBox="0 0 900 574" style="width:100%;height:100%"><text x="236" y="42" text-anchor="end" font-size="17" fill="#3A322C">簡答1 選擇現象學</text><rect x="250" y="24" width="560" height="22" rx="5" fill="#F0E4C8"/><rect x="250" y="24" width="179" height="22" rx="5" fill="#862633"/><text x="824" y="42" font-size="17" font-weight="700" fill="#862633">32%</text><text x="236" y="74" text-anchor="end" font-size="17" fill="#3A322C">簡答2 nepsis</text><rect x="250" y="56" width="560" height="22" rx="5" fill="#F0E4C8"/><rect x="250" y="56" width="241" height="22" rx="5" fill="#862633"/><text x="824" y="74" font-size="17" font-weight="700" fill="#862633">43%</text><text x="236" y="106" text-anchor="end" font-size="17" fill="#3A322C">簡答3 BRD</text><rect x="250" y="88" width="560" height="22" rx="5" fill="#F0E4C8"/><rect x="250" y="88" width="398" height="22" rx="5" fill="#A8782E"/><text x="824" y="106" font-size="17" font-weight="700" fill="#A8782E">71%</text><text x="236" y="138" text-anchor="end" font-size="17" fill="#3A322C">簡答4 三問相互為用</text><rect x="250" y="120" width="560" height="22" rx="5" fill="#F0E4C8"/><rect x="250" y="120" width="482" height="22" rx="5" fill="#3F7A4A"/><text x="824" y="138" font-size="17" font-weight="700" fill="#3F7A4A">86%</text><text x="236" y="170" text-anchor="end" font-size="17" fill="#3A322C">簡答5 立場與態度</text><rect x="250" y="152" width="560" height="22" rx="5" fill="#F0E4C8"/><rect x="250" y="152" width="437" height="22" rx="5" fill="#A8782E"/><text x="824" y="170" font-size="17" font-weight="700" fill="#A8782E">78%</text><text x="236" y="202" text-anchor="end" font-size="17" fill="#3A322C">申一(一) 蜂蜜與井中</text><rect x="250" y="184" width="560" height="22" rx="5" fill="#F0E4C8"/><rect x="250" y="184" width="420" height="22" rx="5" fill="#A8782E"/><text x="824" y="202" font-size="17" font-weight="700" fill="#A8782E">75%</text><text x="236" y="234" text-anchor="end" font-size="17" fill="#3A322C">申一(二) 卡繆立場</text><rect x="250" y="216" width="560" height="22" rx="5" fill="#F0E4C8"/><rect x="250" y="216" width="358" height="22" rx="5" fill="#A8782E"/><text x="824" y="234" font-size="17" font-weight="700" fill="#A8782E">64%</text><text x="236" y="266" text-anchor="end" font-size="17" fill="#3A322C">申一(三) 四條出路</text><rect x="250" y="248" width="560" height="22" rx="5" fill="#F0E4C8"/><rect x="250" y="248" width="325" height="22" rx="5" fill="#A8782E"/><text x="824" y="266" font-size="17" font-weight="700" fill="#A8782E">58%</text><text x="236" y="298" text-anchor="end" font-size="17" fill="#3A322C">申一(四) 兩虛無主義</text><rect x="250" y="280" width="560" height="22" rx="5" fill="#F0E4C8"/><rect x="250" y="280" width="403" height="22" rx="5" fill="#A8782E"/><text x="824" y="298" font-size="17" font-weight="700" fill="#A8782E">72%</text><text x="236" y="330" text-anchor="end" font-size="17" fill="#3A322C">申一(五) 卡繆與道德虛無</text><rect x="250" y="312" width="560" height="22" rx="5" fill="#F0E4C8"/><rect x="250" y="312" width="459" height="22" rx="5" fill="#3F7A4A"/><text x="824" y="330" font-size="17" font-weight="700" fill="#3F7A4A">82%</text><text x="236" y="362" text-anchor="end" font-size="17" fill="#3A322C">申二(一) 是否因善意正當</text><rect x="250" y="344" width="560" height="22" rx="5" fill="#F0E4C8"/><rect x="250" y="344" width="224" height="22" rx="5" fill="#862633"/><text x="824" y="362" font-size="17" font-weight="700" fill="#862633">40%</text><text x="236" y="394" text-anchor="end" font-size="17" fill="#3A322C">申二(二) 善意的作用</text><rect x="250" y="376" width="560" height="22" rx="5" fill="#F0E4C8"/><rect x="250" y="376" width="185" height="22" rx="5" fill="#862633"/><text x="824" y="394" font-size="17" font-weight="700" fill="#862633">33%</text><text x="236" y="426" text-anchor="end" font-size="17" fill="#3A322C">申二(三) 正當性從何而來</text><rect x="250" y="408" width="560" height="22" rx="5" fill="#F0E4C8"/><rect x="250" y="408" width="218" height="22" rx="5" fill="#862633"/><text x="824" y="426" font-size="17" font-weight="700" fill="#862633">39%</text><text x="236" y="458" text-anchor="end" font-size="17" fill="#3A322C">申三(一) 三種行為觀</text><rect x="250" y="440" width="560" height="22" rx="5" fill="#F0E4C8"/><rect x="250" y="440" width="560" height="22" rx="5" fill="#3F7A4A"/><text x="824" y="458" font-size="17" font-weight="700" fill="#3F7A4A">100%</text><text x="236" y="490" text-anchor="end" font-size="17" fill="#3A322C">申三(二) 各屬哪一層</text><rect x="250" y="472" width="560" height="22" rx="5" fill="#F0E4C8"/><rect x="250" y="472" width="218" height="22" rx="5" fill="#862633"/><text x="824" y="490" font-size="17" font-weight="700" fill="#862633">39%</text><text x="236" y="522" text-anchor="end" font-size="17" fill="#3A322C">申三(三) 兩人的疏漏</text><rect x="250" y="504" width="560" height="22" rx="5" fill="#F0E4C8"/><rect x="250" y="504" width="498" height="22" rx="5" fill="#3F7A4A"/><text x="824" y="522" font-size="17" font-weight="700" fill="#3F7A4A">89%</text><text x="236" y="554" text-anchor="end" font-size="17" fill="#3A322C">申三(四) 有心無心</text><rect x="250" y="536" width="560" height="22" rx="5" fill="#F0E4C8"/><rect x="250" y="536" width="297" height="22" rx="5" fill="#A8782E"/><text x="824" y="554" font-size="17" font-weight="700" fill="#A8782E">53%</text></svg></div>
+  
+</section>
+<section class="slide">
+  <div class="q-topline">
+    <h2 class="pt" style="border:none;padding:0;margin:0">簡答第 1 題（5 分）</h2>
+    <span class="rate-pill rate-red">全班得分率 32%</span>
+  </div>
+  <div class="q-quote">什麼是選擇現象學？為何這門學問重要？</div>
+  <table class="qt-table"><tbody><tr><td>定義：探究人的選擇，瞭解其性質、背後因素與歷程的學問</td><td class="pt">2</td></tr><tr><td>重要性總述：選擇形塑我，也形塑我的人生</td><td class="pt">1</td></tr><tr><td>往前看（Trace to the End）：選擇不斷累積並延伸至人生盡頭，故每個選擇都值得認真對待</td><td class="pt">1</td></tr><tr><td>往下挖（Trace to the Root）：選擇之下是價值、人生觀、終極信念與理想，最深處是靈性爭戰，須看懂底層結構</td><td class="pt">1</td></tr></tbody></table>
+  <div class="pitfall"><div class="lbl">常見的落點</div>多數同學能寫出「選擇形塑我的人生」這句總述，但沒有進一步展開兩個理解方向——往前看選擇如何累積延伸到人生盡頭、往下挖選擇底下藏著怎樣的層次結構。也有相當比例的同學這一題整個空白。</div>
+</section>
+<section class="slide">
+  <div class="q-topline">
+    <h2 class="pt" style="border:none;padding:0;margin:0">簡答第 2 題（5 分）</h2>
+    <span class="rate-pill rate-red">全班得分率 43%</span>
+  </div>
+  <div class="q-quote">請簡要說明 nepsis。</div>
+  <table class="qt-table"><tbody><tr><td>能指出 nepsis 即「覺察心法」</td><td class="pt">3</td></tr><tr><td>進一步說明：念頭來敲門不等於犯錯、真正決定好壞的是怎麼接待它；要趁念頭還在門口、尚未扎根就認出並命名；是一切內在修養的地基</td><td class="pt">2</td></tr></tbody></table>
+  <div class="pitfall"><div class="lbl">常見的落點</div>本題不要求寫出希臘字源或傳統典故，只要能說出「覺察心法」這個核心概念與它怎麼運作。全班有一半以上同學這一題完全空白——這與簡答第 1 題一樣，是今天要特別花時間補的兩題。</div>
+</section>
+<section class="slide">
+  <div class="q-topline">
+    <h2 class="pt" style="border:none;padding:0;margin:0">簡答第 3 題（8 分）</h2>
+    <span class="rate-pill rate-neutral">全班得分率 71%</span>
+  </div>
+  <div class="q-quote">什麼是 BRD？從 BRD 來看判決與犯罪事實的關係。</div>
+  <table class="qt-table"><tbody><tr><td>說出 BRD 是什麼、英文原文（Beyond Reasonable Doubt），並說明其意義</td><td class="pt">4</td></tr><tr><td>判決無罪，不一定表示事實上沒有犯罪</td><td class="pt">2</td></tr><tr><td>判決有罪，也不一定表示事實上有犯罪</td><td class="pt">2</td></tr></tbody></table>
+  <div class="pitfall"><div class="lbl">常見的落點</div>大多數同學能正確說出「排除合理懷疑」的定義，但容易只寫出一個方向（多半漏掉「判決有罪，不一定表示事實上真的有犯罪」這一半），或者只用一句總括的話帶過，沒有把兩個方向分開說清楚。</div>
+</section>
+<section class="slide">
+  <div class="q-topline">
+    <h2 class="pt" style="border:none;padding:0;margin:0">簡答第 4 題（6 分）</h2>
+    <span class="rate-pill rate-green">全班得分率 86%</span>
+  </div>
+  <div class="q-quote">人學探索與人生三問如何相互為用？</div>
+  <table class="qt-table"><tbody><tr><td>要探討人生根本問題，必先瞭解「人是什麼」</td><td class="pt">3</td></tr><tr><td>愈深入探究人生三問，也就愈瞭解人性</td><td class="pt">3</td></tr></tbody></table>
+  <div class="pitfall"><div class="lbl">常見的落點</div>這是全班表現最好的題目之一。少數失分的情況，是把「人生三問」寫成能主動去探討什麼的主體（應該是人在探討三問，三問本身不會探討），或者只用單向的理由（要探討根本問題必先了解人是什麼）去支持「雙向」這個結論，邏輯上撐不起來。</div>
+</section>
+<section class="slide">
+  <div class="q-topline">
+    <h2 class="pt" style="border:none;padding:0;margin:0">簡答第 5 題（6 分）</h2>
+    <span class="rate-pill rate-neutral">全班得分率 78%</span>
+  </div>
+  <div class="q-quote">請簡要說明什麼是「立場不必中立，態度必須公正」。</div>
+  <table class="qt-table"><tbody><tr><td>立場不必中立：沒有立場即鄉愿或西瓜偎大邊；應採當下所能達到、最接近真理的立場並擇善固執</td><td class="pt">3</td></tr><tr><td>態度必須公正：對自己不偏袒己見、向新證據開放；對他人不誇大缺失、不忽略對方最強論據</td><td class="pt">3</td></tr></tbody></table>
+  <div class="pitfall"><div class="lbl">常見的落點</div>「立場不必中立」是一句規範性的主張——意思是我們不該假裝中立、而應該採取最接近真理的立場。如果寫成「每個人都有自己的立場，所以很難保持中立」這種單純描述事實的句子，方向就不對了，這一半不會給分。另外，「態度必須公正」需要具體談到「對自己」與「對他人」兩個面向，只籠統寫「應該保持客觀公正」而沒有展開，只能拿到一部分分數。</div>
+</section>
+<section class="slide divider">
+  <div class="dnum">申論一</div>
+  <div class="dtt">終極理想與終極信念</div>
+  <div class="dsub">28 分・五個小題，從托爾斯泰的井中人寓言出發，一路推進到卡繆自身的矛盾</div>
+</section>
+<section class="slide">
+  <div class="q-topline">
+    <h2 class="pt" style="border:none;padding:0;margin:0">申論一 井中人寓言（4 分）</h2>
+    <span class="rate-pill rate-neutral">全班得分率 75%</span>
+  </div>
+  <div class="q-quote">托爾斯泰的井中人寓言裡，旅人上有猛獸、下有巨龍，攀住的樹枝正被一黑一白兩隻老鼠不停啃咬，而他伸舌舔著葉上僅存的幾滴蜂蜜。蜂蜜屬於哪一個部分？他所處的井中處境又對應哪一個部分？</div>
+  <div class="two-col"><div><table class="qt-table"><tbody><tr><td class="sub">(一)</td><td>蜂蜜屬於終極理想（值得活的人生的部分經驗）</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>井中處境（巨龍與雙鼠）對應終極信念——生命本身是否超越虛無</td><td class="pt">2</td></tr></tbody></table></div><div></div></div>
+  <div class="pitfall"><div class="lbl">常見的落點</div>多數同學方向答對（蜂蜜對應美好的人生經驗、井中處境對應生死的終極提問），但沒有明確點出「終極理想」與「終極信念」這兩個範疇的名稱——題目問的正是「屬於哪一個部分」，沒有指認出範疇名稱，嚴格說還沒有真正答到題目核心。</div>
+</section>
+<section class="slide">
+  <div class="q-topline">
+    <h2 class="pt" style="border:none;padding:0;margin:0">申論一 卡繆的立場（6 分）</h2>
+    <span class="rate-pill rate-neutral">全班得分率 64%</span>
+  </div>
+  <div class="q-quote">卡繆的荒謬，代表他對於終極理想與終極信念採取了怎樣的立場？</div>
+  <div class="two-col"><div><table class="qt-table"><tbody><tr><td class="sub">(二)</td><td>終極信念層次：卡繆採存在虛無主義的立場</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>終極理想層次：他仍是肯定的（肯定正義、親情等人生之中的意義）</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>「荒謬」即兩者並存的張力——生命有豐富意義值得追求，生命本身卻似乎沒有意義</td><td class="pt">2</td></tr></tbody></table></div><div></div></div>
+  <div class="pitfall"><div class="lbl">常見的落點</div>「荒謬」必須是由前兩層對照出來的——先說終極信念層「生命本身沒有意義」、終極理想層「值得活」，再把兩者並置才照出荒謬。如果直接把「人生荒謬」接在「沒有意義」後面當成同義的複述，或只寫「選擇對抗荒謬」（那其實是下一小題的內容），這一項只能拿到局部分數。</div>
+</section>
+<section class="slide">
+  <div class="q-topline">
+    <h2 class="pt" style="border:none;padding:0;margin:0">申論一 四條出路與兩人評價（8 分）</h2>
+    <span class="rate-pill rate-neutral">全班得分率 58%</span>
+  </div>
+  <div class="q-quote">托爾斯泰認為存在虛無主義者只有四條出路，卡繆選擇哪一條？托爾斯泰與卡繆對這樣的選擇有怎樣不同的看法？</div>
+  <div class="two-col"><div><table class="qt-table"><tbody><tr><td class="sub">(三)</td><td>四條出路：童稚無知／渾噩享樂／明知荒謬仍苟延殘喘／了結生命</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>指認卡繆選第三條</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>托爾斯泰對這個選擇的評價：稱之為苟延殘喘、視為不徹底</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>卡繆稱之為「反抗」，視為唯一誠實而有尊嚴的回應</td><td class="pt">2</td></tr></tbody></table></div><div></div></div>
+  <div class="pitfall"><div class="lbl">常見的落點</div>不少同學漏列四條出路，或者雖然指認出卡繆選第三條，卻沒有進一步比較托爾斯泰與卡繆對「同一個選擇」的不同評價——這一題要的核心不是兩人終極信念立場的對比（門與牆），而是他們怎麼評價「明知荒謬仍活著」這件事本身。</div>
+</section>
+<section class="slide">
+  <div class="q-topline">
+    <h2 class="pt" style="border:none;padding:0;margin:0">申論一 虛無主義的關連與卡繆的道德觀（10 分）</h2>
+    
+  </div>
+  <div class="q-quote">存在虛無主義與道德虛無主義有何關連？卡繆怎麼看道德虛無主義？</div>
+  <div class="two-col"><div><table class="qt-table"><tbody><tr><td class="sub">(四)</td><td>說出道德虛無主義是什麼：道德價值失去形上與永恆的基礎</td><td class="pt">3</td></tr><tr><td class="sub"></td><td>指出存在虛無主義邏輯上會推出道德虛無主義</td><td class="pt">3</td></tr><tr><td class="sub">(五)</td><td>說出卡繆反對／否定道德虛無主義</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>指出這裡有一種矛盾（或荒謬），或指出他仍肯定人倫、正義的價值</td><td class="pt">2</td></tr></tbody></table></div><div></div></div>
+  <div class="pitfall"><div class="lbl">常見的落點</div>第（四）小題全班表現不錯（72%）。第（五）小題表現最好（82%）——但關鍵是通篇要明確出現「卡繆反對／否定道德虛無主義」這句話，光是文中其他敘述正確，沒有明說這一點，仍不算答到題目。</div>
+</section>
+<section class="slide divider">
+  <div class="dnum">申論二</div>
+  <div class="dtt">善意的謊言</div>
+  <div class="dsub">18 分・這是今天全卷掌握最弱的一大題，三個小題全部落在紅色區間</div>
+</section>
+<section class="slide">
+  <div class="q-topline">
+    <h2 class="pt" style="border:none;padding:0;margin:0">申論二 是否因善意而正當（8 分）</h2>
+    <span class="rate-pill rate-red">全班得分率 40%</span>
+  </div>
+  <div class="q-quote">善意的謊言是不是因為善意而成為道德上正當的？請說明你的判斷，並說明判斷的依據。</div>
+  <table class="qt-table"><tbody><tr><td>正確答案：不是——行為方案的對錯只與它的客觀性質有關，與善意無關</td><td class="pt">8</td></tr><tr><td>只答出「善意使整件事變得正當」，沒有進一步分析</td><td class="pt">3</td></tr></tbody></table>
+  <div class="pitfall"><div class="lbl">常見的落點</div>本題最容易出現的問題，是把「答案」跟「理由」混在一起：不少同學寫出了正確的結論（不是因為善意而正當），但支持這個結論的理由卻仍然把善意當成部分依據，方向自相矛盾。也有同學把課本的判斷步驟原封不動照抄一遍，卻沒有真正扣回「善意的謊言」這個題目本身。</div>
+</section>
+<section class="slide">
+  <div class="q-topline">
+    <h2 class="pt" style="border:none;padding:0;margin:0">申論二 善意的作用（6 分）</h2>
+    <span class="rate-pill rate-red">全班得分率 33%</span>
+  </div>
+  <div class="q-quote">善意在道德抉擇中究竟起什麼作用？</div>
+  <table class="qt-table"><tbody><tr><td>道德敏感度：讓人關心所作所為的對錯、願意行對避錯，引領人在選擇之前選對方案</td><td class="pt">2</td></tr><tr><td>道德自律性：端正人擇善避惡的動機</td><td class="pt">2</td></tr><tr><td>實踐貫徹性：讓人知行合一地去行動</td><td class="pt">2</td></tr></tbody></table>
+  <div class="pitfall"><div class="lbl">常見的落點</div>許多同學漏答「善意是在選擇之前引導我們選對方案」這一項——只寫出善意如何影響事後對整件事的評價，卻沒有說到它在事前的引導作用，而這正是題目要問的重點。</div>
+</section>
+<section class="slide">
+  <div class="q-topline">
+    <h2 class="pt" style="border:none;padding:0;margin:0">申論二 正當性從何而來（4 分）</h2>
+    <span class="rate-pill rate-red">全班得分率 39%</span>
+  </div>
+  <div class="q-quote">若某些情形下的說謊在道德上是正當的，其正當性從何而來？</div>
+  <table class="qt-table"><tbody><tr><td>情境使行為方案不同——同樣的話，情境不同就是不同的行為方案（答對一項即得分）</td><td class="pt">4</td></tr><tr><td>規範本身要先經過思辨的檢驗與確認，才能成為值得持守的規範</td><td class="pt">4</td></tr></tbody></table>
+  <div class="pitfall"><div class="lbl">常見的落點</div>這一題答對一個方向即可拿到全部分數，但仍有不少同學留白，或答案偏離題目——把「正當性從何而來」答成「什麼時候可以說謊」，沒有扣回「正當性的根據」這個提問本身。</div>
+</section>
+<section class="slide divider">
+  <div class="dnum">申論三</div>
+  <div class="dtt">考城隍與三種行為觀</div>
+  <div class="dsub">24 分・全卷表現最兩極的一大題——三種行為觀是今天全卷最高分，但「各屬哪一層」卻是低分區</div>
+</section>
+<section class="slide">
+  <div class="q-topline">
+    <h2 class="pt" style="border:none;padding:0;margin:0">申論三 三種行為觀（6 分）</h2>
+    <span class="rate-pill rate-green">全班得分率 100%＋</span>
+  </div>
+  <div class="q-quote">三種行為觀各是什麼？</div>
+  <div class="two-col"><div><table class="qt-table"><tbody><tr><td class="sub">(一)</td><td>行為本身：素樸的行為描述，不能做道德判斷</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>行為方案：行為本身＋情境，其對錯繫於客觀性質，與動機無關</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>行為整體：行為方案＋意圖及動機，方案客觀正確且意志為善，才是道德正確</td><td class="pt">2</td></tr></tbody></table></div><div></div></div>
+  <div class="pitfall"><div class="lbl">常見的落點</div>這是全班掌握最好的一題，多數同學不但寫出三層架構，還進一步寫出每一層各自的判斷原則，因而拿到額外加分（本題原始配分 6 分，寫出完整判斷原則最高可到 9 分，所以全班平均已經超過原始滿分）。</div>
+</section>
+<section class="slide">
+  <div class="q-topline">
+    <h2 class="pt" style="border:none;padding:0;margin:0">申論三 三個案例各屬哪一層（6 分）</h2>
+    <span class="rate-pill rate-red">全班得分率 39%</span>
+  </div>
+  <div class="q-quote">就〈考城隍〉、Pojman 推人案與張三毒老婆案三者，分別說明各自所做的是對哪一層的道德判斷。</div>
+  <div class="two-col"><div><table class="qt-table"><tbody><tr><td class="sub">(二)</td><td>〈考城隍〉＝對行為整體的道德判斷</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>Pojman 推人案＝對行為方案的道德判斷</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>張三毒老婆案＝對行為方案的道德判斷</td><td class="pt">2</td></tr></tbody></table></div><div></div></div>
+  <div class="pitfall"><div class="lbl">常見的落點</div>這一題與（一）形成明顯落差。最常見的問題是只指出了〈考城隍〉評價的其中一面（例如只說「評價行為者的意志」），而沒有同時指出它也涉及「對所採取行為方案」的評價——本題要的是兩個面向都要說到。</div>
+</section>
+<section class="slide">
+  <div class="q-topline">
+    <h2 class="pt" style="border:none;padding:0;margin:0">申論三 兩人的疏漏與有心無心（12 分）</h2>
+    
+  </div>
+  <div class="q-quote">Pojman 與 Thomson 的疏漏各在哪裡？「有心為善，雖善不賞」與「無心為惡，雖惡不罰」應如何解釋？</div>
+  <div class="two-col"><div><table class="qt-table"><tbody><tr><td class="sub">(三)</td><td>Pojman 的疏漏：忽略情境——有飛刀射來時，推人客觀上就是救人</td><td class="pt">4</td></tr><tr><td class="sub"></td><td>Thomson 的疏漏：誤把實際結果當判準，且誤以為意圖與行為對錯無關</td><td class="pt">4</td></tr></tbody></table></div><div><table class="qt-table"><tbody><tr><td class="sub">(四)</td><td>有心為善：動機非出於善意，行為整體不具道德價值，但行為方案仍客觀正確</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>無心為惡：惡果不在預見範圍內，故行為方案本身不算道德錯誤</td><td class="pt">2</td></tr></tbody></table></div></div>
+  <div class="pitfall"><div class="lbl">常見的落點</div>（三）表現不錯（89%）。（四）容易漏答「行為方案仍是客觀正確的」這一半，只寫出動機面向；即使答不出完整要點，只要能說出「無論行善或行惡，動機都很重要」這個大方向，也能拿到基礎分。</div>
 </section>
 
 <button class="nav-btn" id="prevB" onclick="go(-1)">‹</button>
