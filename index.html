@@ -70,6 +70,9 @@ h3.sec-note{font-size:1.3rem;color:var(--ink-soft);font-weight:400;margin:-2.4vh
 .plan-desc .do{margin-bottom:.4em}
 .plan-stat{margin-top:.8vh;font-size:1.02rem;color:var(--ink-soft);text-align:center;flex:0 0 auto}
 .plan-stat b{color:var(--wine);font-size:1.15rem}
+.cmp-legend{display:flex;flex-wrap:wrap;gap:1.6vw;margin:-1.6vh 0 1vh;font-size:1.05rem;color:var(--ink-soft);flex:0 0 auto}
+.cmp-item{display:flex;align-items:center;gap:.5em}
+.cmp-dot{display:inline-block;width:1.5em;height:.5em;border-radius:3px;flex:0 0 auto}
 /* 貳．整學期學習統計 */
 .stat-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:1.8vh 2vw;flex:1;min-height:0}
 .stat-card{background:var(--paper-soft);border-radius:16px;padding:1.4em 1.6em;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
@@ -159,6 +162,19 @@ h3.sec-note{font-size:1.3rem;color:var(--ink-soft);font-weight:400;margin:-2.4vh
       <div><span class="lbl">意義</span><span id="planMeaning"></span></div>
     </div>
   </div>
+</section>
+<section class="slide">
+  <h2 class="pt">全班分數變化總覽</h2>
+  <h3 class="sec-note">原始成績與各方案，46 位同學（去識別化排序）的分數曲線對照</h3>
+  <div class="cmp-legend">
+    <span class="cmp-item"><span class="cmp-dot" style="background:#5A4F48"></span>原始成績</span>
+    <span class="cmp-item"><span class="cmp-dot" style="background:#A8782E"></span>方案甲</span>
+    <span class="cmp-item"><span class="cmp-dot" style="background:#C9A85C"></span>方案乙</span>
+    <span class="cmp-item"><span class="cmp-dot" style="background:#B08968"></span>方案丙</span>
+    <span class="cmp-item"><span class="cmp-dot" style="background:#862633;width:1.6em;height:.3em"></span>採行方案 ★</span>
+  </div>
+  <div class="chart-wrap"><svg viewBox="0 0 900 420" style="width:100%;height:100%"><line x1="70" y1="380.0" x2="860" y2="380.0" stroke="#E3D6C4" stroke-width="1.5"/><text x="56" y="385.0" text-anchor="end" font-size="15" fill="#5A4F48">0</text><line x1="70" y1="312.0" x2="860" y2="312.0" stroke="#E3D6C4" stroke-width="1.5"/><text x="56" y="317.0" text-anchor="end" font-size="15" fill="#5A4F48">20</text><line x1="70" y1="244.0" x2="860" y2="244.0" stroke="#E3D6C4" stroke-width="1.5"/><text x="56" y="249.0" text-anchor="end" font-size="15" fill="#5A4F48">40</text><line x1="70" y1="176.0" x2="860" y2="176.0" stroke="#E3D6C4" stroke-width="1.5"/><text x="56" y="181.0" text-anchor="end" font-size="15" fill="#5A4F48">60</text><line x1="70" y1="108.0" x2="860" y2="108.0" stroke="#E3D6C4" stroke-width="1.5"/><text x="56" y="113.0" text-anchor="end" font-size="15" fill="#5A4F48">80</text><line x1="70" y1="40.0" x2="860" y2="40.0" stroke="#E3D6C4" stroke-width="1.5"/><text x="56" y="45.0" text-anchor="end" font-size="15" fill="#5A4F48">100</text><line x1="70" y1="380" x2="860" y2="380" stroke="#C9B99B" stroke-width="2"/><polyline points="70.0,247.4 87.6,230.4 105.1,227.0 122.7,220.2 140.2,216.8 157.8,213.4 175.3,203.2 192.9,199.8 210.4,196.4 228.0,196.4 245.6,193.0 263.1,186.2 280.7,186.2 298.2,186.2 315.8,179.4 333.3,179.4 350.9,176.0 368.4,169.2 386.0,169.2 403.6,165.8 421.1,165.8 438.7,162.4 456.2,159.0 473.8,159.0 491.3,155.6 508.9,152.2 526.4,152.2 544.0,148.8 561.6,148.8 579.1,148.8 596.7,145.4 614.2,145.4 631.8,142.0 649.3,138.6 666.9,135.2 684.4,135.2 702.0,135.2 719.6,135.2 737.1,131.8 754.7,131.8 772.2,128.4 789.8,121.6 807.3,118.2 824.9,114.8 842.4,111.4 860.0,104.6" fill="none" stroke="#5A4F48" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><polyline points="70.0,216.8 87.6,196.4 105.1,189.6 122.7,182.8 140.2,179.4 157.8,176.0 175.3,162.4 192.9,159.0 210.4,152.2 228.0,152.2 245.6,148.8 263.1,142.0 280.7,142.0 298.2,142.0 315.8,131.8 333.3,131.8 350.9,128.4 368.4,118.2 386.0,118.2 403.6,114.8 421.1,114.8 438.7,111.4 456.2,108.0 473.8,108.0 491.3,104.6 508.9,97.8 526.4,97.8 544.0,94.4 561.6,94.4 579.1,94.4 596.7,91.0 614.2,91.0 631.8,87.6 649.3,80.8 666.9,77.4 684.4,77.4 702.0,77.4 719.6,77.4 737.1,74.0 754.7,74.0 772.2,70.6 789.8,60.4 807.3,57.0 824.9,53.6 842.4,46.8 860.0,40.0" fill="none" stroke="#A8782E" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><polyline points="70.0,169.2 87.6,155.6 105.1,152.2 122.7,145.4 140.2,145.4 157.8,142.0 175.3,135.2 192.9,131.8 210.4,131.8 228.0,131.8 245.6,128.4 263.1,125.0 280.7,125.0 298.2,125.0 315.8,118.2 333.3,118.2 350.9,118.2 368.4,111.4 386.0,111.4 403.6,111.4 421.1,111.4 438.7,108.0 456.2,104.6 473.8,104.6 491.3,104.6 508.9,101.2 526.4,101.2 544.0,101.2 561.6,101.2 579.1,101.2 596.7,97.8 614.2,97.8 631.8,94.4 649.3,94.4 666.9,91.0 684.4,91.0 702.0,91.0 719.6,91.0 737.1,91.0 754.7,91.0 772.2,87.6 789.8,84.2 807.3,80.8 824.9,80.8 842.4,77.4 860.0,74.0" fill="none" stroke="#C9A85C" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><polyline points="70.0,206.6 87.6,189.6 105.1,186.2 122.7,179.4 140.2,176.0 157.8,172.6 175.3,162.4 192.9,159.0 210.4,155.6 228.0,155.6 245.6,152.2 263.1,145.4 280.7,145.4 298.2,145.4 315.8,138.6 333.3,138.6 350.9,135.2 368.4,128.4 386.0,128.4 403.6,125.0 421.1,125.0 438.7,121.6 456.2,118.2 473.8,118.2 491.3,114.8 508.9,111.4 526.4,111.4 544.0,108.0 561.6,108.0 579.1,108.0 596.7,104.6 614.2,104.6 631.8,101.2 649.3,97.8 666.9,94.4 684.4,94.4 702.0,94.4 719.6,94.4 737.1,91.0 754.7,91.0 772.2,87.6 789.8,80.8 807.3,77.4 824.9,74.0 842.4,70.6 860.0,63.8" fill="none" stroke="#B08968" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><polyline points="70.0,223.6 87.6,203.2 105.1,199.8 122.7,193.0 140.2,189.6 157.8,186.2 175.3,172.6 192.9,169.2 210.4,165.8 228.0,165.8 245.6,159.0 263.1,152.2 280.7,152.2 298.2,152.2 315.8,145.4 333.3,145.4 350.9,142.0 368.4,131.8 386.0,131.8 403.6,128.4 421.1,128.4 438.7,125.0 456.2,121.6 473.8,121.6 491.3,118.2 508.9,111.4 526.4,111.4 544.0,108.0 561.6,108.0 579.1,108.0 596.7,104.6 614.2,104.6 631.8,101.2 649.3,97.8 666.9,94.4 684.4,94.4 702.0,94.4 719.6,94.4 737.1,87.6 754.7,87.6 772.2,84.2 789.8,77.4 807.3,74.0 824.9,70.6 842.4,63.8 860.0,57.0" fill="none" stroke="#862633" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/></svg></div>
+  <div class="scroll-note">橫軸為 46 位同學依原始成績由低到高排序（去識別化，不對應座號，不代表個人排名認定），縱軸為換算後分數。可以清楚看到「採行方案」如何在完整保留每個人相對名次與差距比例的前提下，把全班整體落點往上調整。</div>
 </section>
 <section class="slide">
   <h2 class="pt">十七道題的得分率總覽</h2>
@@ -443,10 +459,10 @@ document.addEventListener('keydown',e=>{
 const PLANS={
   raw:{tab:'原始成績',dist:{n70:14,n60:16,n50:10,n49:6},avg:63.4,mn:39,mx:81,fail:16,
     do:'期末考直接閱卷後的實際分數，未經任何調整。',
-    meaning:'最真實反映考卷本身的作答情況。但這份考卷本身難度偏高、又採取嚴格的對錯判斷（不因立意良善而放寬），單看這個數字容易低估大家整學期真正學到的東西。'},
+    meaning:'最真實反映考卷本身的作答情況。但這份考卷本身難度偏高、又採取嚴格的給分標準，雖可客觀評估同學們整學期學到的東西，但可能不能反映同學們認真學習與自我提升的努力情況。'},
   a:{tab:'方案甲',dist:{n70:35,n60:6,n50:4,n49:1},avg:78.2,mn:48,mx:100,fail:5,
     do:'把全班最高分（81 分）當作滿分基準，其餘同學依「原分 ÷ 81 × 100」的相同比例往上調整。',
-    meaning:'每個人的相對名次與彼此的分數差距完全保持不變，只是把整份考卷的難度重新校準到「最高分＝100」。唯一的顧慮是把最高分直接視為滿分，感覺上有點不夠謹慎。'},
+    meaning:'每個人的相對名次與彼此的分數差距完全保持不變，只是把整份考卷的難度重新校準到「最高分＝100」。唯一的顧慮是把最高分直接視為滿分，並不完全妥適。'},
   b:{tab:'方案乙',dist:{n70:41,n60:5,n50:0,n49:0},avg:79.2,mn:62,mx:90,fail:0,
     do:'把每人的分數開根號、再乘以 10（例如 62 分 → √62×10 ≈ 79 分）。',
     meaning:'這是「非線性」調整——分數愈低，被拉抬的幅度愈大，因此全班不及格人數會降到 0 人。但代價是原始的相對差距被壓縮甚至扭曲：本來考 39 分與考 81 分差距很大，換算後差距明顯縮小，不完全公平反映原始表現的落差。'},
@@ -455,7 +471,7 @@ const PLANS={
     meaning:'這是最單純的「平移」，每個人加的量一樣多，相對差距完全不變。但因為是齊頭式加分，低分同學受益有限（39 分加 12 分也只有 51 分），仍有 4 人不及格。'},
   chosen:{tab:'採行方案 ★',dist:{n70:30,n60:10,n50:5,n49:1},avg:74.3,mn:46,mx:95,fail:6,
     do:'邏輯與方案甲相同（等比放大），但把最高分設定為 95 分而非 100 分——換算式為「原分 ÷ 81 × 95」，四捨五入取整。',
-    meaning:'同樣完整保留每個人的相對名次與差距比例，但不把最高分直接當成滿分。這是我們最終決定採用的方案，也將同步用於官方學期成績登錄。'}
+    meaning:'同樣完整保留每個人的相對名次與差距比例，但不把最高分直接當成滿分。這是我最終決定採用的方案，也將同步用於正式學期成績登錄。'}
 };
 function renderDist(containerId,dist){
   const cats=[
@@ -468,7 +484,7 @@ function renderDist(containerId,dist){
   const baseY=280,xs=[60,230,400,570],barW=130;
   let svg='<svg viewBox="0 0 800 340" style="width:100%;height:100%"><line x1="50" y1="'+baseY+'" x2="710" y2="'+baseY+'" stroke="#C9B99B" stroke-width="2"/>';
   cats.forEach((c,i)=>{
-    const h=Math.round((c.v/maxV)*250);
+    const h=Math.round((c.v/maxV)*225);
     const y=baseY-h;
     const cx=xs[i]+65;
     svg+='<rect x="'+xs[i]+'" y="'+y+'" width="'+barW+'" height="'+h+'" rx="8" fill="'+c.color+'"/>';
