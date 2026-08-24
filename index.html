@@ -25,8 +25,8 @@ body{font-family:"Noto Serif TC","Songti TC",serif;color:var(--ink)}
 .cover .meta{margin-top:5vh;font-size:1.2rem;color:#D8C2AC;letter-spacing:.18em}
 /* 內頁 */
 h2.pt{font-size:2.6rem;font-weight:900;color:var(--wine);letter-spacing:.06em;border-bottom:3px solid var(--gold);padding-bottom:1.6vh;margin-bottom:3.6vh}
-.agenda{display:flex;flex-direction:column;gap:1.6vh;justify-content:flex-start;flex:1;min-height:0}
-.ag-row{display:flex;align-items:center;gap:2.2vw;background:var(--paper-soft);border-left:.55vw solid var(--wine);border-radius:14px;padding:1.6vh 2.2vw}
+.agenda{display:flex;flex-direction:column;gap:1.2vh;justify-content:flex-start;flex:1;min-height:0}
+.ag-row{display:flex;align-items:center;gap:2.2vw;background:var(--paper-soft);border-left:.55vw solid var(--wine);border-radius:14px;padding:1.15vh 2.2vw}
 .ag-row .no{font-size:2.2rem;font-weight:900;color:var(--gold);min-width:3.2em}
 .ag-row .tt{font-size:1.75rem;font-weight:700}
 .ag-row .dd{font-size:1.5rem;color:var(--ink-soft);margin-top:.4vh}
@@ -56,6 +56,7 @@ h3.sec-note{font-size:1.3rem;color:var(--ink-soft);font-weight:400;margin:-2.4vh
 .pitfall{background:var(--paper-soft);border-left:.4vw solid var(--gold);border-radius:10px;padding:.75em 1.4em;font-size:1rem;line-height:1.5}
 .pitfall .lbl{color:var(--wine);font-weight:900;margin-bottom:.35em;font-size:1.1rem}
 .two-col{display:grid;grid-template-columns:1.05fr .95fr;gap:0 3.6vw;flex:1;min-height:0}
+.two-col.wide{grid-template-columns:1fr}
 .scroll-note{font-size:1.02rem;color:var(--ink-soft);margin-top:1vh}
 /* 方案動態圖表 */
 .plan-page{display:flex;flex-direction:column;flex:1;min-height:0}
@@ -74,11 +75,11 @@ h3.sec-note{font-size:1.3rem;color:var(--ink-soft);font-weight:400;margin:-2.4vh
 .cmp-item{display:flex;align-items:center;gap:.5em}
 .cmp-dot{display:inline-block;width:1.5em;height:.5em;border-radius:3px;flex:0 0 auto}
 /* 貳．整學期學習統計 */
-.stat-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:1.8vh 2vw;flex:1;min-height:0}
-.stat-card{background:var(--paper-soft);border-radius:16px;padding:1.4em 1.6em;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:1.2vh 2vw;flex:1;min-height:0}
+.stat-card{background:var(--paper-soft);border-radius:16px;padding:.85em 1.4em;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
 .stat-card .num{font-size:3.1rem;font-weight:900;color:var(--wine);line-height:1}
 .stat-card .num .unit{font-size:1.25rem;font-weight:700;color:var(--gold);margin-left:.2em}
-.stat-card .lbl{font-size:1.08rem;color:var(--ink-soft);margin-top:.6em;line-height:1.55}
+.stat-card .lbl{font-size:1.05rem;color:var(--ink-soft);margin-top:.4em;line-height:1.45}
 .topic-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,1fr);gap:1.1vh 3vw;flex:1;min-height:0}
 .topic-card{background:var(--paper-soft);border-left:.6vw solid var(--wine);border-radius:12px;padding:.4em 1.4em;display:flex;flex-direction:row;align-items:center;gap:1em;min-height:0}
 .topic-card .tt{font-size:1.5rem;font-weight:900;color:var(--wine);flex:0 0 7.4em}
@@ -206,7 +207,7 @@ h3.sec-note{font-size:1.3rem;color:var(--ink-soft);font-weight:400;margin:-2.4vh
     <span class="rate-pill rate-neutral">全班得分率 65%</span>
   </div>
   <div class="q-quote">托爾斯泰的井中人寓言裡，旅人上有猛獸、下有巨龍，攀住的樹枝正被一黑一白兩隻老鼠不停啃咬，而他伸舌舔著葉上僅存的幾滴蜂蜜。蜂蜜屬於哪一個部分？他所處的井中處境又對應哪一個部分？</div>
-  <div class="two-col"><div><table class="qt-table"><tbody><tr><td class="sub">(一)</td><td>蜂蜜屬於終極理想（值得活的人生的部分經驗）</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>井中處境（巨龍與雙鼠）對應終極信念——生命本身是否超越虛無</td><td class="pt">2</td></tr></tbody></table></div><div></div></div>
+  <div class="two-col wide"><div><table class="qt-table"><tbody><tr><td class="sub">(一)</td><td>蜂蜜屬於終極理想（值得活的人生的部分經驗）</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>井中處境（巨龍與雙鼠）對應終極信念——生命本身是否超越虛無</td><td class="pt">2</td></tr></tbody></table></div><div></div></div>
   <div class="pitfall"><div class="lbl">常見的落點</div>全班的落點高度集中：多數同學方向答對（蜂蜜對應人生中美好的經驗、井中處境對應生死與虛無的追問），但沒有明確點出「終極理想」與「終極信念」這兩個範疇的名稱——題目問的正是「屬於哪一個部分」，沒有指認出範疇名稱，嚴格說還沒有真正答到題目核心。另有少數同學把這一題答成了別的小題的內容。</div>
 </section>
 <section class="slide">
@@ -215,7 +216,7 @@ h3.sec-note{font-size:1.3rem;color:var(--ink-soft);font-weight:400;margin:-2.4vh
     <span class="rate-pill rate-neutral">全班得分率 60%</span>
   </div>
   <div class="q-quote">卡繆的荒謬，代表他對於終極理想與終極信念採取了怎樣的立場？</div>
-  <div class="two-col"><div><table class="qt-table"><tbody><tr><td class="sub">(二)</td><td>終極信念層次：卡繆採存在虛無主義的立場</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>終極理想層次：他仍是肯定的（肯定正義、親情等人生之中的意義）</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>「荒謬」即兩者並存的張力——生命有豐富意義值得追求，生命本身卻似乎沒有意義</td><td class="pt">2</td></tr></tbody></table></div><div></div></div>
+  <div class="two-col wide"><div><table class="qt-table"><tbody><tr><td class="sub">(二)</td><td>終極信念層次：卡繆採存在虛無主義的立場</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>終極理想層次：他仍是肯定的（肯定正義、親情等人生之中的意義）</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>「荒謬」即兩者並存的張力——生命有豐富意義值得追求，生命本身卻似乎沒有意義</td><td class="pt">2</td></tr></tbody></table></div><div></div></div>
   <div class="pitfall"><div class="lbl">常見的落點</div>這一題有兩個典型的失分。第一個是漏掉終極理想層：只寫了卡繆在終極信念層否定生命本身的意義，卻沒有寫他仍然肯定正義、親情這些人生之中的價值，有幾位同學還把「反抗荒謬」（那其實是下一小題的內容）拿來替代這一層。第二個是「荒謬」沒有從兩層的對照中照出來——先說終極信念層「生命本身沒有意義」、終極理想層「值得活」，再把兩者並置才照出荒謬；把「人生荒謬」直接接在「沒有意義」後面當成同義的複述，就少了這一題最關鍵的那一步。</div>
 </section>
 <section class="slide">
@@ -223,9 +224,9 @@ h3.sec-note{font-size:1.3rem;color:var(--ink-soft);font-weight:400;margin:-2.4vh
     <h2 class="pt" style="border:none;padding:0;margin:0">申論一 四條出路與兩人評價（8 分）</h2>
     <span class="rate-pill rate-neutral">全班得分率 50%</span>
   </div>
-  <div class="q-quote">托爾斯泰認為存在虛無主義者只有四條出路，卡繆選擇哪一條？托爾斯泰與卡繆對這樣的選擇有怎樣不同的看法？</div>
-  <div class="two-col"><div><table class="qt-table"><tbody><tr><td class="sub">(三)</td><td>四條出路：童稚無知／渾噩享樂／明知荒謬仍苟延殘喘／了結生命</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>指認卡繆選第三條</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>托爾斯泰對這個選擇的評價：稱之為苟延殘喘、視為不徹底</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>卡繆稱之為「反抗」，視為唯一誠實而有尊嚴的回應</td><td class="pt">2</td></tr></tbody></table></div><div></div></div>
-  <div class="pitfall"><div class="lbl">常見的落點</div>這是申論一裡掌握最弱的一題。最普遍的缺口是沒有把四條出路完整列出來——多數同學只寫到卡繆選的那一條。第二個缺口是沒有比較托爾斯泰與卡繆對「同一個選擇」的不同評價：不少同學改寫成托爾斯泰自己如何走向信仰，那是他的立場，不是他對卡繆這個選擇的評價。也有同學漏掉了卡繆自己怎麼稱呼這個選擇（反抗）。</div>
+  <div class="q-quote" style="padding:.45em 1.3em;margin-bottom:.6vh">托爾斯泰認為存在虛無主義者只有四條出路，卡繆選擇哪一條？托爾斯泰與卡繆對這樣的選擇有怎樣不同的看法？</div>
+  <div class="two-col wide"><div><table class="qt-table" style="font-size:.9rem"><tbody><tr><td class="sub" style="padding:.22em .6em">(三)</td><td style="padding:.22em .6em">四條出路：童稚無知／渾噩享樂／明知荒謬仍苟延殘喘／了結生命</td><td class="pt" style="padding:.22em .6em">2</td></tr><tr><td class="sub" style="padding:.22em .6em"></td><td style="padding:.22em .6em">指認卡繆選第三條</td><td class="pt" style="padding:.22em .6em">2</td></tr><tr><td class="sub" style="padding:.22em .6em"></td><td style="padding:.22em .6em">托爾斯泰對這個選擇的評價：稱之為苟延殘喘、視為不徹底</td><td class="pt" style="padding:.22em .6em">2</td></tr><tr><td class="sub" style="padding:.22em .6em"></td><td style="padding:.22em .6em">卡繆稱之為「反抗」，視為唯一誠實而有尊嚴的回應</td><td class="pt" style="padding:.22em .6em">2</td></tr></tbody></table></div><div></div></div>
+  <div class="pitfall" style="padding:.4em 1.4em;font-size:.92rem;line-height:1.3"><div class="lbl" style="font-size:1rem;margin-bottom:.2em">常見的落點</div>這是申論一裡掌握最弱的一題。最普遍的缺口是沒有把四條出路完整列出來——多數同學只寫到卡繆選的那一條。第二個缺口是沒有比較托爾斯泰與卡繆對「同一個選擇」的不同評價：不少同學改寫成托爾斯泰自己如何走向信仰，那是他的立場，不是他對卡繆這個選擇的評價。也有同學漏掉了卡繆自己怎麼稱呼這個選擇（反抗）。</div>
 </section>
 <section class="slide">
   <div class="q-topline">
@@ -233,7 +234,7 @@ h3.sec-note{font-size:1.3rem;color:var(--ink-soft);font-weight:400;margin:-2.4vh
     
   </div>
   <div class="q-quote" style="padding:.4em 1.3em;margin-bottom:.6vh">存在虛無主義與道德虛無主義有何關連？卡繆怎麼看道德虛無主義？</div>
-  <div class="two-col"><div><table class="qt-table" style="font-size:.92rem"><tbody><tr><td class="sub" style="padding:.22em .6em">(四)</td><td style="padding:.22em .6em">說出道德虛無主義是什麼：道德價值失去形上與永恆的基礎</td><td class="pt" style="padding:.22em .6em">3</td></tr><tr><td class="sub" style="padding:.22em .6em"></td><td style="padding:.22em .6em">指出存在虛無主義邏輯上會推出道德虛無主義</td><td class="pt" style="padding:.22em .6em">3</td></tr><tr><td class="sub" style="padding:.22em .6em">(五)</td><td style="padding:.22em .6em">說出卡繆反對／否定道德虛無主義</td><td class="pt" style="padding:.22em .6em">2</td></tr><tr><td class="sub" style="padding:.22em .6em"></td><td style="padding:.22em .6em">指出這裡有一種矛盾（或荒謬），或指出他仍肯定人倫、正義的價值</td><td class="pt" style="padding:.22em .6em">2</td></tr></tbody></table></div><div></div></div>
+  <div class="two-col wide"><div><table class="qt-table" style="font-size:.92rem"><tbody><tr><td class="sub" style="padding:.22em .6em">(四)</td><td style="padding:.22em .6em">說出道德虛無主義是什麼：道德價值失去形上與永恆的基礎</td><td class="pt" style="padding:.22em .6em">3</td></tr><tr><td class="sub" style="padding:.22em .6em"></td><td style="padding:.22em .6em">指出存在虛無主義邏輯上會推出道德虛無主義</td><td class="pt" style="padding:.22em .6em">3</td></tr><tr><td class="sub" style="padding:.22em .6em">(五)</td><td style="padding:.22em .6em">說出卡繆反對／否定道德虛無主義</td><td class="pt" style="padding:.22em .6em">2</td></tr><tr><td class="sub" style="padding:.22em .6em"></td><td style="padding:.22em .6em">指出這裡有一種矛盾（或荒謬），或指出他仍肯定人倫、正義的價值</td><td class="pt" style="padding:.22em .6em">2</td></tr></tbody></table></div><div></div></div>
   <div class="pitfall"><div class="lbl">常見的落點</div>第（四）小題（57%）的兩個給分點是分開的：一是道德虛無主義的定義，二是指出存在虛無主義在邏輯上會推出道德虛無主義；常見的落點是只答到其中一個——有的定義寫得很準，卻只把兩者並列對照、沒講出推演的方向。第（五）小題（53%）非常兩極，一半滿分、一半零分：關鍵是通篇要明確出現「卡繆反對／否定道德虛無主義」這句話，主詞要是卡繆；文中其他敘述再正確，沒有明說這一點仍不算答到題目。</div>
 </section>
 <section class="slide divider">
@@ -279,7 +280,7 @@ h3.sec-note{font-size:1.3rem;color:var(--ink-soft);font-weight:400;margin:-2.4vh
     <span class="rate-pill rate-green">全班得分率 115%</span>
   </div>
   <div class="q-quote">三種行為觀各是什麼？</div>
-  <div class="two-col"><div><table class="qt-table"><tbody><tr><td class="sub">(一)</td><td>行為本身：素樸的行為描述，不能做道德判斷</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>行為方案：行為本身＋情境，其對錯繫於客觀性質，與動機無關</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>行為整體：行為方案＋意圖及動機，方案客觀正確且意志為善，才是道德正確</td><td class="pt">2</td></tr></tbody></table></div><div></div></div>
+  <div class="two-col wide"><div><table class="qt-table"><tbody><tr><td class="sub">(一)</td><td>行為本身：素樸的行為描述，不能做道德判斷</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>行為方案：行為本身＋情境，其對錯繫於客觀性質，與動機無關</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>行為整體：行為方案＋意圖及動機，方案客觀正確且意志為善，才是道德正確</td><td class="pt">2</td></tr></tbody></table></div><div></div></div>
   <div class="pitfall"><div class="lbl">常見的落點</div>這是全卷掌握最好的一題，全班除一位之外都拿到滿分以上。多數同學不但寫出三層架構，還進一步寫出每一層各自的判斷原則，因而拿到額外加分（本題原始配分 6 分，寫出完整判斷原則最高可到 9 分，所以全班平均已經超過原始滿分）。</div>
 </section>
 <section class="slide">
@@ -287,9 +288,9 @@ h3.sec-note{font-size:1.3rem;color:var(--ink-soft);font-weight:400;margin:-2.4vh
     <h2 class="pt" style="border:none;padding:0;margin:0">申論三 三個案例各屬哪一層（6 分）</h2>
     <span class="rate-pill rate-red">全班得分率 48%</span>
   </div>
-  <div class="q-quote">就〈考城隍〉、Pojman 推人案與張三毒老婆案三者，分別說明各自所做的是對哪一層的道德判斷。</div>
-  <div class="two-col"><div><table class="qt-table"><tbody><tr><td class="sub">(二)</td><td>〈考城隍〉＝對行為整體的道德判斷</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>Pojman 推人案＝對行為方案的道德判斷</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>張三毒老婆案＝對行為方案的道德判斷</td><td class="pt">2</td></tr></tbody></table></div><div></div></div>
-  <div class="pitfall"><div class="lbl">常見的落點</div>這一題與（一）形成很大的落差。〈考城隍〉多數同學能正確指認為對行為整體的判斷，但若只說到其中一面（例如只講「評價行為者的意志」），沒有同時指出它也涉及對所採取行為方案的評價，仍不算答完整。失分更集中在另外兩個案例：Pojman 推人案與張三毒老婆案問的都是對「行為方案」的道德判斷，卻經常被答成「行為本身」或「行為整體」。</div>
+  <div class="q-quote" style="padding:.45em 1.3em;margin-bottom:.6vh">就〈考城隍〉、Pojman 推人案與張三毒老婆案三者，分別說明各自所做的是對哪一層的道德判斷。</div>
+  <div class="two-col wide"><div><table class="qt-table"><tbody><tr><td class="sub">(二)</td><td>〈考城隍〉＝對行為整體的道德判斷</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>Pojman 推人案＝對行為方案的道德判斷</td><td class="pt">2</td></tr><tr><td class="sub"></td><td>張三毒老婆案＝對行為方案的道德判斷</td><td class="pt">2</td></tr></tbody></table></div><div></div></div>
+  <div class="pitfall" style="padding:.45em 1.4em;font-size:.93rem;line-height:1.38"><div class="lbl" style="font-size:1rem;margin-bottom:.2em">常見的落點</div>這一題與（一）形成很大的落差。〈考城隍〉多數同學能正確指認為對行為整體的判斷，但若只說到其中一面（例如只講「評價行為者的意志」），沒有同時指出它也涉及對所採取行為方案的評價，仍不算答完整。失分更集中在另外兩個案例：Pojman 推人案與張三毒老婆案問的都是對「行為方案」的道德判斷，卻經常被答成「行為本身」或「行為整體」。</div>
 </section>
 <section class="slide">
   <div class="q-topline">
@@ -298,7 +299,7 @@ h3.sec-note{font-size:1.3rem;color:var(--ink-soft);font-weight:400;margin:-2.4vh
   </div>
   <div class="q-quote" style="padding:.4em 1.3em;margin-bottom:.6vh">Pojman 與 Thomson 的疏漏各在哪裡？「有心為善，雖善不賞」與「無心為惡，雖惡不罰」應如何解釋？</div>
   <div class="two-col"><div><table class="qt-table" style="font-size:.9rem"><tbody><tr><td class="sub" style="padding:.2em .65em">(三)</td><td style="padding:.2em .65em">Pojman 的疏漏：忽略情境——有飛刀射來時，推人客觀上就是救人</td><td class="pt" style="padding:.2em .65em">4</td></tr><tr><td class="sub" style="padding:.2em .65em"></td><td style="padding:.2em .65em">Thomson 的疏漏：對行為方案的道德判斷應以 f 為準，他卻誤把實際結果 A 當判準（客觀論）。意圖善惡不決定行為方案的對錯，但會決定人會怎樣選擇行為方案</td><td class="pt" style="padding:.2em .65em">4</td></tr></tbody></table></div><div><table class="qt-table" style="font-size:.9rem"><tbody><tr><td class="sub" style="padding:.2em .65em">(四)</td><td style="padding:.2em .65em">有心為善：動機非出於善意，行為整體不具道德價值，但行為方案仍客觀正確</td><td class="pt" style="padding:.2em .65em">2</td></tr><tr><td class="sub" style="padding:.2em .65em"></td><td style="padding:.2em .65em">無心為惡：惡果不在預見範圍內，故行為方案本身不算道德錯誤</td><td class="pt" style="padding:.2em .65em">2</td></tr></tbody></table></div></div>
-  <div class="pitfall" style="padding:.5em 1.4em"><div class="lbl">常見的落點</div>（三）表現相當好（85%），三分之二的同學拿到滿分；少數失分集中在 Pojman 這一半——只寫「忽略情境」四個字沒有具體展開，或把角度放在「意圖不同所以行為不同」，反而偏離了「情境本身使同一個行為成為不同的行為方案」這個要點。（四）（69%）最容易出錯的是「無心為惡」：不少同學寫成「這個行為是錯的，但因為不是故意的所以不罰」；正確的理解是惡果本來就不在可預見的範圍之內，所以這個行為方案本身並不是道德錯誤的。至於「有心為善」，只要把該行為定性為善行、善事，就已經隱含肯定了行為方案客觀正確，不必逐字寫出這句話。</div>
+  <div class="pitfall" style="padding:.45em 1.4em;font-size:.9rem;line-height:1.35"><div class="lbl" style="font-size:1rem;margin-bottom:.2em">常見的落點</div>（三）表現相當好（85%），三分之二的同學拿到滿分；少數失分集中在 Pojman 這一半——只寫「忽略情境」四個字、沒有具體展開。（四）（69%）最常出錯的是「無心為惡」：不少同學寫成「這個行為是錯的，但不是故意的所以不罰」；正確的理解是惡果本來就不在可預見的範圍內，所以行為方案本身並不算道德錯誤。至於「有心為善」，只要把該行為定性為善行，就已隱含肯定了行為方案客觀正確。</div>
 </section>
 
 <section class="slide divider">
